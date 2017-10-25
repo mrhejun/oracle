@@ -1,0 +1,20 @@
+
+                       -- alter table的用法
+ 5 
+ 6 -- 修改表的定义
+ 7 -- 增加列
+ 8 alter table 表名 add (表里的列名 varchar(30));
+ 9 
+10 -- 修改列(修改数据类型)
+11 alter table 表名 modify (表的列名 varchar(MAX));
+12 
+13 -- 删除列
+14 alter table 表名 drop 表的列名;
+15 
+16 
+17 -- 修改约束的定义
+18 -- 增加约束
+19 ALTER TABLE HR.Employees ADD CONSTRAINT chk_Employees_hiredate CHECK (hiredate<=GETDATE());
+20 
+21 -- 删除约束
+22 ALTER TABLE HR.Employees DROP CONSTRAINT chk_Employees_hiredate;
