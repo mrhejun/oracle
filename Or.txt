@@ -14,7 +14,7 @@
 16 
 17 -- 修改约束的定义
 18 -- 增加约束
-19 ALTER TABLE HR.Employees ADD CONSTRAINT chk_Employees_hiredate CHECK (hiredate<=GETDATE());
+19 alter table 表名 add CONSTRAINT chk_Employees_hiredate CHECK (hiredate<=GETDATE());
 20 
 21 -- 删除约束
-22 ALTER TABLE HR.Employees DROP CONSTRAINT chk_Employees_hiredate;
+22 alter table 表名 drop CONSTRAINT chk_Employees_hiredate;
